@@ -12,7 +12,7 @@ pub enum Color {
 
 
 impl Color {
-    fn ansi_code(&self) -> &str {
+    pub fn ansi_code(&self) -> &str {
         match self {
             Color::Black => "\x1b[30m",
             Color::Red => "\x1b[31m",
